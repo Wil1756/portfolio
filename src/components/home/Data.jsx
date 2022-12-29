@@ -57,7 +57,7 @@ export default function Data(){
                 </svg>
         </h1>
         <h3 className="home__subtitle">Frontend Developer</h3>
-        <p className="home__description">I'm a creative developer based in Uganda, and I'm very passionate and dedicated to my professional work.</p>
+        <p className="home__description">I'm a creative developer based in Uganda, very passionate and dedicated to my professional work.</p>
         <a href="#contact" className="button button--flex">
             Say Hello
             <svg
