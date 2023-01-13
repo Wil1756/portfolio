@@ -1,10 +1,11 @@
 import React from 'react';
+import './footer.css';
 
 export default function Footer(){
     return(
       <footer className="footer">
         <div className="footer__container container">
-            <h1 className="footer__title">Smith</h1>
+            <h1 className="footer__title">William</h1>
 
             <ul className="footer__list">
                 <li>
@@ -22,23 +23,25 @@ export default function Footer(){
 
             <div className="footer__social">
                 
-            <a href="https://www.whatsapp.com/" className="home__social-icon" target='_blank'>
-            <i className="uil uil-whatsapp"></i>
+            <a href="https://www.whatsapp.com/" className="footer__social-link" target='_blank'>
+            <i className="bx bxl-whatsapp"></i>
             </a>
 
-            <a href="https://www.instagram.com/" className="home__social-icon" target='_blank'>
-            <i className="uil uil-instagram"></i>
+            <a href="https://www.instagram.com/" className="footer__social-link" target='_blank'>
+            <i className="bx bxl-instagram"></i>
             </a>
 
-            <a href="https://github.com/" className="home__social-icon" target='_blank'>
-            <i className="uil uil-github"></i>
+            <a href="https://github.com/" className="footer__social-link" target='_blank'>
+            <i className="bx bxl-github"></i>
             </a>
 
-            <a href="https://twitter.com/" className="home__social-icon" target='_blank'>
-            <i className="uil uil-twitter"></i>
+            <a href="https://twitter.com/" className="footer__social-link" target='_blank'>
+            <i className="bx bxl-twitter"></i>
             </a>
-            
+
             </div>
+
+            <span className='footer__copy'>&#169; Wil1756. All rights reserved.</span>
         </div>
       </footer>
     );
