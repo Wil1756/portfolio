@@ -77,7 +77,7 @@ export default function Data(){
                     fill="var(--conatiner-color)"
                   ></path>
                 </svg>
-            </a>
+        </a>
        </div>
     );
 }

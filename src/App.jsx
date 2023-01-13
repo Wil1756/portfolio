@@ -7,6 +7,7 @@ import Skills from './components/skills/Skills';
 import Services from './components/services/Services';
 import Qualification from './components/qualification/Qualification';
 import Testimonial from './components/testimonial/Testimonial';
+import Contact from './components/contact/Contact';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Services/>
       <Qualification/>
       <Testimonial/>
+      <Contact/>
      </main>
      </>
   );
