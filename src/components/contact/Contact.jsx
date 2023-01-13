@@ -29,7 +29,7 @@ export default function Contact(){
                         <span className="contact__card-data">johnwilliams1756@gmail.com</span>
 
                         <a href="mailto:example@gmail.com.com" className="contact__button">
-                            Write me {" "}
+                            Email me {" "}
                             <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                         </a>
                     </div>
@@ -41,7 +41,7 @@ export default function Contact(){
                         <span className="contact__card-data">+256-705-165815</span>
 
                         <a href="https://api.whatsapp.com/send?phone=+256-705-165815&text=Hello, more information!" className="contact__button">
-                            Write me {" "}
+                            Whatsapp me {" "}
                             <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                         </a>
                     </div>
