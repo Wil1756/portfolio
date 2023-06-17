@@ -9,24 +9,29 @@ import Qualification from './components/qualification/Qualification';
 import Testimonial from './components/testimonial/Testimonial';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import Scrollup from './components/scrollup/Scrollup';
+import Project from './components/projects/project';
 
 
 function App() {
   return (
-     <>
-     <Header/>
+    <>
+      <Header />
 
-     <main className='main'>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Services/>
-      <Qualification/>
-      <Testimonial/>
-      <Contact/>
-      <Footer/>
-     </main>
-     </>
+      <main className='main'>
+        <Home />
+        <About />
+        <Skills />
+        <Services />
+        <Qualification />
+        <Project />
+        <Testimonial />
+        <Contact />
+
+      </main>
+      <Footer />
+      <Scrollup />
+    </>
   );
 }
 export default App;
