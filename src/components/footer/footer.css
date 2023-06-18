@@ -1,5 +1,5 @@
 .footer{
-    background-color: var(--container-color);
+    background-color:#2A3439;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -9,7 +9,8 @@
 
 .footer__title,
 .footer__link{
-    color: var(--title-color);
+    color:#fff;
+
 
 }
 

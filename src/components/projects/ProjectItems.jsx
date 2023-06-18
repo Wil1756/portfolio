@@ -7,7 +7,6 @@ const ProjectItems = ({ item }) => {
             <h3 className="project__title">{item.title}</h3>
             <a href="#" className="project__button">
                 Demo <i className="bx bx-right-arrow-alt project__button-icon"></i>
-
             </a>
         </div>
     );
