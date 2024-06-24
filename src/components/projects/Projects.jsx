@@ -17,6 +17,7 @@ const Projects = () => {
             const newProjects = projectsData.filter((project) => {
                 return project.category.toLowerCase() === item.name;
             });
+            setProjects(newProjects);
         }
     }, [item])
 
@@ -46,3 +47,4 @@ const Projects = () => {
 }
 
 export default Projects;
+

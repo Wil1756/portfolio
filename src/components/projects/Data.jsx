@@ -15,7 +15,7 @@ export const projectsData = [
         id: 4,
         img: 'https://img.freepik.com/free-vector/flat-design-cryptocurrencies-app-template_23-2151084902.jpg?t=st=1719265376~exp=1719268976~hmac=eb079717835053bd09a9fe0978a5e17ec78ebdeef659e7976a44753caa88d777&w=1800',
         title: 'App',
-        category: 'web'
+        category: 'app'
     },
    
 ]
