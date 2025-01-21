@@ -1,0 +1,197 @@
+.project__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.project__item {
+    cursor: pointer;
+    color: var(--title-color);
+    padding: 0.35rem 1rem;
+    font-weight: var(--font-medium);
+    border-radius: 1.5rem;
+    font-size: var(--small-font-size);
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    border: 1px solid var(--title-color);
+}
+
+.project__item:hover {
+    background-color: var(--title-color);
+    color: var(--container-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project__container {
+    grid-template-columns: repeat(3, max-content);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 200px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project__img-container {
+    padding: 0.5rem 0.5rem 0;
+}
+
+.project__img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    transition: transform 0.3s ease;
+}
+
+.project__card:hover .project__img {
+    transform: scale(1.02);
+}
+
+.project__content {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.project__title {
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 0;
+    color: var(--title-color);
+}
+
+.project__description-container {
+    margin-bottom: var(--mb-0-75);
+    flex-grow: 1;
+    position: relative;
+    background: var(--container-color);
+}
+
+.project__description {
+    font-size: var(--tiny-font-size);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.project__description.show-all {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    max-height: none;
+}
+
+.project__description-more {
+    color: var(--text-color);
+    font-size: var(--smaller-font-size);
+    cursor: pointer;
+    margin-left: 0.25rem;
+    opacity: 0.7;
+    display: inline;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 4px;
+    background: linear-gradient(to left, var(--container-color) 50%, transparent);
+    padding-right: 4px;
+}
+
+.project__description-more:hover {
+    text-decoration: underline;
+}
+
+.project__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin: 0.25rem 0;
+}
+
+.project__tech-tag {
+    padding: 0.1rem 0.3rem;
+    font-size: var(--tiny-font-size);
+    background: var(--container-color);
+    color: var(--title-color);
+    border-radius: 0.25rem;
+    border: 1px solid var(--title-color);
+}
+
+.project__button {
+    font-size: var(--tiny-font-size);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.active-project {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+
+.project__tech-container {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+    margin-bottom: var(--mb-1);
+    opacity: 0.8;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .project__container {
+        grid-template-columns: repeat(3, max-content);
+        gap: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project__container {
+        grid-template-columns: repeat(2, max-content);
+    }
+    
+    .project__card {
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .project__card {
+        max-width: 100%;
+    }
+    
+    .project__img {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .project__item {
+        font-size: var(--small-font-size);
+        padding: 0.4rem 1rem;
+    }
+
+    .project__filters {
+        gap: 0.5rem;
+    }
+} 

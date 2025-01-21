@@ -1,0 +1,147 @@
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: #1E2937;
+    transition: all 0.3s ease;
+}
+
+.nav{
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 0 3rem;
+}
+
+.nav__logo,
+.nav__toggle{
+    color:#fff;
+    font-weight: var(--font-medium);
+}
+
+.nav__list{
+    display: flex;
+    column-gap: 2rem;
+    margin-right: 4rem;
+}
+
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: var(--font-medium);
+    transition: .3s;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav__icon,
+.nav__close,
+.nav__toggle{
+    display: none;
+}
+
+/* Active link */
+.active-link,
+.nav__link:hover{
+    color: #ffffff;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
+
+.nav__link:hover::after,
+.active-link::after {
+    width: 100%;
+}
+
+/* Breakpoints */
+/* For medium devices */
+@media screen and (max-width: 768px){
+    .header{
+        top: initial;
+        bottom: 0;
+    }
+
+    .nav{
+        height: var(--header-height);
+    }
+
+    .nav__menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+    }
+
+    /* show menu */
+    .show-menu{
+        bottom: 0;
+    }
+
+    .nav__list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .nav__icon{
+        font-size: 1.2rem;
+    }
+
+    .nav__close{
+        position: absolute;
+        right: 1.3rem;
+        bottom: .5rem;
+        font-size: 1,5rem;
+        cursor: pointer;
+        color: var(--title-color);
+    }
+
+    .nav__close:hover{
+        color: var(--title-color-dark);
+    }
+
+    .nav__toggle{
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    .nav__icon,
+    .nav__close,
+    .nav__toggle{
+        display: block;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px){
+    .nav__menu{
+        padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav__list{
+        column-gap: 0;
+    }
+}
