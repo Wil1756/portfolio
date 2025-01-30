@@ -25,16 +25,16 @@ export default function Footer() {
                         <h3 className="footer__subtitle">Connect With Me</h3>
                         <div className="footer__social">
                             <a href="https://www.whatsapp.com/" className="footer__social-link" target='_blank' rel="noreferrer">
-                                <i className="bx bxl-whatsapp"></i>
+                                <i className="fab fa-whatsapp"></i>
                             </a>
                             <a href="https://www.instagram.com/" className="footer__social-link" target='_blank' rel="noreferrer">
-                                <i className="bx bxl-instagram"></i>
+                                <i className="fab fa-instagram"></i>
                             </a>
                             <a href="https://github.com/" className="footer__social-link" target='_blank' rel="noreferrer">
-                                <i className="bx bxl-github"></i>
+                                <i className="fab fa-github"></i>
                             </a>
                             <a href="https://twitter.com/" className="footer__social-link" target='_blank' rel="noreferrer">
-                                <i className="bx bxl-twitter"></i>
+                                <i className="fab fa-x-twitter"></i>
                             </a>
                         </div>
                     </div>
